@@ -9,4 +9,10 @@ Button btn5(24);
 Button btn6(25);
 Button btn7(26);
 Button btn8(27);
+void reLED()
+{
+  for (int thisPin = 0; thisPin < ledCount; thisPin++) {
+    analogWrite(ledPins[thisPin], ledLevels[thisPin]);
+  }
+}
 

@@ -37,9 +37,4 @@ class Button {
       return ret;
     }
 };
-void refreshLED{
-  for (int thisPin = 0; thisPin < ledCount; thisPin++) {
-    analogWrite(ledPins[thisPin], ledLevels[thisPin]);
-  }
-}
 
