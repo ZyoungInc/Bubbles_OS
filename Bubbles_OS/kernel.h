@@ -38,3 +38,12 @@ class Button {
     }
 };
 
+void reLED(){
+  for (int thisPin = 0; thisPin < ledCount; thisPin++) {
+    analogWrite(ledPins[thisPin], ledLevels[thisPin]);}
+}
+
+void closeLED(){
+ for (int t = 0; t < 8; t++) {
+   ledLevels[t] = 0; }
+}
